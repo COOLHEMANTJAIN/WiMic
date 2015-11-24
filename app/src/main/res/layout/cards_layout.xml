@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/mic_photo"
-                android:layout_toEndOf="@+id/mic_photo"
+                android:layout_toEndOf=cd gi    "@+id/mic_photo"
                 android:layout_alignParentTop="true"
                 android:textSize="30sp"
                 android:textColor="@color/room_name"

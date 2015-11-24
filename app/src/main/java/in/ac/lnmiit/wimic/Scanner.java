@@ -128,7 +128,7 @@ public class Scanner extends AsyncTask<InetAddress, Room, List<Room>> {
 
                 if (message.contains(Config.ACK_MESSAGE)) {
                     serverDetails = message.split(";");
-                    Room newRoom = new Room(serverDetails[1], receivePacket.getAddress().toString());
+                    Room newRoom = new Room(serverDetails[1], receivePacket.getAddress().toString(), serverDetails[2]);
                     rooms.add(newRoom);
 
                     publishProgress(newRoom);

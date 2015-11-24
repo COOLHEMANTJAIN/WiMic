@@ -207,7 +207,7 @@ public class WiMicServer implements Runnable {
      * @throws IOException thrown when can't send message
      */
     private void sendDiscoveryAck(DatagramSocket socket, DatagramPacket packet) throws IOException {
-        byte[] sendData = (ACK_MESSAGE + ";" + this.name + ";"+ "hello").getBytes();
+        byte[] sendData = (ACK_MESSAGE + ";" + this.name).getBytes();
         DatagramPacket sendPacket = new DatagramPacket(
                 sendData,
                 sendData.length,

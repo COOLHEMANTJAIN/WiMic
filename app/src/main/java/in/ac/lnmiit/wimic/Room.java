@@ -18,14 +18,21 @@ public class Room {
     private String ipAddress;
 
     /**
+     *  Details of the room
+     */
+    private String details;
+
+    /**
      * Constructor
      *
      * @param name Name of the room
      * @param ipAddress IP address of the room
+     * @param details Details of the room
      */
-    Room(String name, String ipAddress) {
+    Room(String name, String ipAddress, String details) {
         this.name = name;
         this.ipAddress = ipAddress;
+        this.details = details;
     }
 
     /**
@@ -46,4 +53,5 @@ public class Room {
     public void setIpAddress(String ipAddress) {
         this.ipAddress = ipAddress;
     }
+    public String getDetails() { return details; }
 }
